@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startup Trends Analyst using Llama-3</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Startup Trends Analyst using Llama-3 🔍🚀</h1>
+        <p>This app analyzes startup trends, technologies, and emerging companies based on your specific interests.</p>
+        
+        <div class="search-container">
+            <input type="text" id="query" placeholder="Enter your research query (e.g., 'AI startups in healthcare', 'Web3 trends')">
+            <button id="searchButton">Research</button>
+        </div>
+        
+        <div id="loading" class="hidden">
+            <div class="loader"></div>
+            <p>Analyzing startup trends. This may take a moment...</p>
+        </div>
+        
+        <div id="result" class="result hidden"></div>
+        <div id="error" class="error hidden"></div>
+    </div>
+</body>
+</html>
