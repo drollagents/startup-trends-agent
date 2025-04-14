@@ -1,19 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Startup Trends Analyst using Llama-3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="description" content="Analyze emerging tech trends and startup ecosystems with AI-powered insights using our Startup Trends Analyst.">
+    
+    <title>Startup Trends Analyst - Droll Agents</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
 </head>
 <body>
     <div class="container">
-        <h1>Startup Trends Analyst using Llama-3 🔍🚀</h1>
-        <p>This app analyzes startup trends, technologies, and emerging companies based on your specific interests.</p>
+        <div class="agent-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                <line x1="6" y1="8" x2="6" y2="8"></line>
+                <line x1="18" y1="8" x2="18" y2="8"></line>
+                <line x1="6" y1="12" x2="6" y2="12"></line>
+                <line x1="18" y1="12" x2="18" y2="12"></line>
+                <line x1="6" y1="16" x2="6" y2="16"></line>
+                <line x1="18" y1="16" x2="18" y2="16"></line>
+            </svg>
+            <span>Analytical Agent</span>
+        </div>
+        
+        <h1>Startup Trends Analyst</h1>
+        <p>Analyze emerging tech trends and startup ecosystems with AI-powered insights. Get comprehensive information about innovative companies, market trends, and future technology opportunities.</p>
         
         <div class="search-container">
             <input type="text" id="query" placeholder="Enter your research query (e.g., 'AI startups in healthcare', 'Web3 trends')">
-            <button id="searchButton">Research</button>
+            <button id="searchButton"><span>Research</span></button>
         </div>
         
         <div id="loading" class="hidden">
@@ -23,6 +40,36 @@
         
         <div id="result" class="result hidden"></div>
         <div id="error" class="error hidden"></div>
+        
+        <div class="agent-features">
+            <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 3v18h18"></path>
+                    <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
+                </svg>
+                <span>Startup Ecosystem Analysis</span>
+            </div>
+            
+            <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+                <span>Technology Trend Reports</span>
+            </div>
+            
+            <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <span>Market Opportunity Identification</span>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p class="powered-by">Powered by <strong>Droll Agents</strong></p>
+        </div>
     </div>
 </body>
 </html>
