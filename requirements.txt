@@ -3,5 +3,9 @@ python-dotenv
 langchain-groq
 langchain
 langchain-community
+<<<<<<< HEAD
 requests
 gunicorn
+=======
+requests
+>>>>>>> 3cadbbea3faa141790e3e28fae09bc50fa18276d
